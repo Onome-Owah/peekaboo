@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.emoji{
+    font-size: 10rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close{
+    display: none;
+}
+
+.open{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.click{
+    width: 200px;
+    height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+
+@media all and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+
+    .click{
+        width: 150px;
+        height: 50px;
+    }
+}
